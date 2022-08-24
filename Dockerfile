@@ -14,5 +14,5 @@ RUN git clone https://github.com/ritika-malviya/crypto-pred.git .
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
 
