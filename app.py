@@ -115,3 +115,6 @@ st.pyplot(fig2)
 st.write("Green indicates the Predicted Data")
 st.write("Blue indicates the Complete Data")
 st.write("Orange indicates the Train Data")
+
+if __name__ == '__main__':
+    main()
