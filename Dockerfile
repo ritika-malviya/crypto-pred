@@ -3,4 +3,5 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE $PORT
-CMD streamlit --workers=4 --bind 0.0.0.0:$PORT app:app
+CMD ["streamlit","run","streamlit_app.py","--server.port = 8501","--server.address = 0.0.0.0"]
+ 
